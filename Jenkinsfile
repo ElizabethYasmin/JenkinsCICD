@@ -1,5 +1,5 @@
 pipeline {
-    agent docker
+    agent {label "slave_terraform_prueba"}
 
     stages {
         stage('docker build') {
