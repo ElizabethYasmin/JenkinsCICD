@@ -5,7 +5,7 @@ pipeline {
         stage('docker build') {
             steps {
                 script {
-                    sh "sudo docker build -f Dockerfile -t elizabethhuanca/imgyasmin:1.0.0-${BUILD_ID}"
+                    sh "sudo docker build  Dockerfile -t elizabethhuanca/imgyasmin:1.0.0-${BUILD_ID}"
                 }
             }
         }
