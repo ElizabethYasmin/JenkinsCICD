@@ -1,4 +1,4 @@
-/* pipeline {
+pipeline {
     agent {label "docker"}
 
     stages {
@@ -17,8 +17,8 @@
             }
         }
     }
-} */
-
+} 
+/* 
 pipeline {
   environment {
     imagename = "elizabethhuanca/imgyasmin"
@@ -58,4 +58,4 @@ pipeline {
       }
     }
   }
-}
+} */
