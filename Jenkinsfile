@@ -1,4 +1,4 @@
-pipeline {
+/* pipeline {
     agent {label "docker"}
 
     stages {
@@ -17,7 +17,7 @@ pipeline {
             }
         }
     }
-}
+} */
 
 pipeline {
   environment {
