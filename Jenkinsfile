@@ -5,7 +5,7 @@ pipeline {
         stage('docker build') {
             steps {
                 script {
-                    sh "docker build -f app/Dockerfile -t elizabethhuanca/imgyasmin:1.0.0-${BUILD_ID} app"
+                    sh "DOCKER_BUILDKIT=1 docker build -f app/Dockerfile -t elizabethhuanca/imgyasmin:1.0.0-${BUILD_ID} app"
                 }
             }
         }
