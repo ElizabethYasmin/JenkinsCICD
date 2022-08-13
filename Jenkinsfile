@@ -20,7 +20,7 @@ pipeline {
         stage('docker push') {
             steps {
                 script {
-                    sh "docker push elizabethhuanca/imgyasmin:1.0.0-${BUILD_ID}"
+                    sh 'docker push $PUBLIC_ENDPOINT:1.0.0-${BUILD_ID}'
                 }
             }
         }
