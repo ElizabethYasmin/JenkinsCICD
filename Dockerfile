@@ -6,7 +6,7 @@ ARG NODE_ENV
 ENV NODE_ENV=${NODE_ENV}
 
 RUN rm -rf /var/www/html/index.nginx-debian.html
-COPY ./login/dist/ /var/www/html/
+COPY /login/dist/ /var/www/html/
 
 EXPOSE 80:80
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
