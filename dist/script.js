@@ -1,15 +1,14 @@
-/* Credit and Thanks:
-Matrix - Particles.js;
-SliderJS - Ettrics;
-Design - Sara Mazal Web;
-Fonts - Google Fonts
-*/
+var nombre =process.env.NOMBRE || "Yasmin";
+
+console.log("Hola ..."+nombre+"......");
+
 
 window.onload = function () {
   Particles.init({
     selector: ".background"
   });
 };
+
 const particles = Particles.init({
   selector: ".background",
   color: ["#03dac6", "#ff0266", "#000000"],
@@ -133,9 +132,3 @@ class NavigationPage {
 }
 
 new NavigationPage();
-/* Credit and Thanks:
-Matrix - Particles.js;
-SliderJS - Ettrics;
-Design - Sara Mazal Web;
-Fonts - Google Fonts
-*/
