@@ -13,8 +13,7 @@ pipeline {
         stage('docker build') {
             steps {
                 script {
-                    sh 'docker build -f Dockerfile -t $PUBLIC_ENDPOINT:1.0.0-${BUILD_ID} dist --build-arg NOMBRE=Roberto'
-                    
+                    sh 'docker build -f Dockerfile -t $PUBLIC_ENDPOINT:1.0.0-${BUILD_ID} dist --build-arg NOMBRE=Roberto'    
                 }
             }
         }
