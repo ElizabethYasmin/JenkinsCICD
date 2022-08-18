@@ -2,8 +2,8 @@ FROM ubuntu:18.04
 RUN apt-get update -y
 RUN apt-get install nginx -y
 
-ARG NODE_ENV
-ENV NODE_ENV=${NODE_ENV}
+ARG NAME
+ENV NAME=${NAME}
 
 RUN rm -rf /var/www/html/index.nginx-debian.html
 COPY ./src/ /var/www/html/
