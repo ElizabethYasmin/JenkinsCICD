@@ -13,7 +13,7 @@ pipeline {
         stage('docker build') {
             steps {
                 script {
-                    sh 'docker build -f Dockerfile -t $PUBLIC_ENDPOINT:1.0.0-${BUILD_ID} login'
+                    sh 'docker build -f Dockerfile -t $PUBLIC_ENDPOINT:1.0.0-${BUILD_ID} dist'
                     
                 }
             }
